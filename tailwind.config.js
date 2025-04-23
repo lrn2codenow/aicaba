@@ -18,7 +18,9 @@ module.exports = {
           DEFAULT: '#00C2CB', // Teal/Cyan
         },
         accent: {
-          DEFAULT: '#7B61FF', // Violet Purple
+          light: '#A18AFF', // lighter tint of violet
+          DEFAULT: '#7B61FF', // base violet purple
+          dark: '#5432CC', // darker tint
         },
         neutral: {
           DEFAULT: '#2D3748', // Dark Slate
@@ -26,7 +28,6 @@ module.exports = {
         light: {
           DEFAULT: '#F7FAFC', // Soft White
         },
-        // Optionally, map Tailwind's 'slate' to your neutral
         slate: {
           900: '#2D3748',
         }
@@ -38,6 +39,20 @@ module.exports = {
           'system-ui',
           'sans-serif',
         ],
+      },
+      keyframes: {
+        gradient: {
+          '0%, 100%': { 'background-size': '200% 200%', 'background-position': '0% 50%' },
+          '50%': { 'background-size': '200% 200%', 'background-position': '100% 50%' },
+        },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+      },
+      animation: {
+        gradient: 'gradient 8s ease infinite',
+        fadeIn: 'fadeIn 0.2s ease forwards',
       },
     },
   },

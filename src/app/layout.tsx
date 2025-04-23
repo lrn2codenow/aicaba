@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
+import { ThemeProvider } from 'next-themes';
+import Link from 'next/link';
+import { ThemeToggle } from '@/components/ui/theme-toggle';
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-sans",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -24,10 +23,29 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${inter.variable} antialiased`}>
+        <ThemeProvider attribute="class" defaultTheme="system">
+          <header className="bg-white/80 dark:bg-neutral/80 backdrop-blur shadow-sm sticky top-0 z-50 border-b border-gray-200 dark:border-neutral transition-all duration-300">
+            <nav role="navigation" aria-label="Main navigation" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="flex justify-between items-center h-16">
+                <Link href="/" className="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                  <span className="inline-block w-8 h-8 bg-accent rounded-full shadow-md"></span>
+                  <div className="flex flex-col leading-tight">
+                    <span className="text-xl font-bold text-neutral dark:text-light tracking-tight">AIC-ABA</span>
+                    <span className="hidden md:block text-xs italic text-accent uppercase">Ethical AI for Behavior Analysis</span>
+                  </div>
+                </Link>
+                <div className="hidden md:flex items-center space-x-6">
+                  <Link href="/resources" className="nav-link text-neutral dark:text-light hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Free Resources</Link>
+                  <Link href="/presentations" className="nav-link text-neutral dark:text-light hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Presentations</Link>
+                  <Link href="#contact" className="nav-link text-neutral dark:text-light hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Contact</Link>
+                  <ThemeToggle />
+                </div>
+              </div>
+            </nav>
+          </header>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

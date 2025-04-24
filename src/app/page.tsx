@@ -177,10 +177,10 @@ export default function Home() {
         </section>
 
         {/* Contact/CTA Section */}
-        <section id="contact" className="py-20 bg-black">
+        <section id="contact" className="py-20 bg-neutral">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 heading-gradient-underline">Get Involved & Stay Informed</h2>
-            <p className="text-lg text-white leading-relaxed mb-10 max-w-2xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-bold text-light mb-6 heading-gradient-underline">Get Involved & Stay Informed</h2>
+            <p className="text-lg text-light leading-relaxed mb-10 max-w-2xl mx-auto">
               The ethical landscape of AI in ABA is constantly evolving. The <strong className="font-semibold text-accent">AI Consortium for ABA (AIC-ABA)</strong> is committed to ongoing dialogue, collaboration, and refinement of these guidelines. Connect with us to contribute, join, or stay updated.
             </p>
             <div className="text-lg text-accent font-semibold mt-8">
@@ -197,7 +197,7 @@ export default function Home() {
             <div className="mb-8 md:mb-0">
               <span className="text-2xl font-bold text-white tracking-tight">AI Consortium for ABA (AIC-ABA)</span>
               <p className="mt-2 text-gray-400 text-sm max-w-xs">Advancing ethical AI practices in Applied Behavior Analysis.</p>
-              <p className="mt-4 text-gray-400 text-sm"><a href="mailto:info@aicaba.org" className="underline hover:text-accent">info@aicaba.org</a></p>
+              <p className="mt-4 text-gray-400 text-sm"><a href="mailto:aiconsortiumaba@gmail.com" className="underline hover:text-accent">aiconsortiumaba@gmail.com</a></p>
               <address className="text-gray-400 text-sm not-italic">123 Consortium Lane, City, Country</address>
             </div>
             <div className="grid grid-cols-2 gap-8 md:gap-16">

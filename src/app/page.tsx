@@ -172,7 +172,7 @@ export default function Home() {
         <section id="audience" aria-labelledby="audience-heading" className="py-20 bg-white dark:bg-neutral-900 border-b border-gray-200 dark:border-neutral animate-fadeIn">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 id="audience-heading" className="text-[clamp(2.25rem,5vw,3.5rem)] font-bold text-primary mb-6 heading-gradient-underline">Who Are These Guidelines For?</h2>
-            <p className="text-lg text-neutral dark:text-light leading-relaxed max-w-3xl mx-auto">For behavior analysts, practitioners, researchers, and organizations pursuing ethical AI in ABA.</p>
+            <p className="text-lg text-neutral dark:text-light leading-relaxed max-w-3xl mx-auto">For behavior analysts, practitioners, researchers, developers, and organizations pursuing ethical AI in ABA.</p>
           </div>
         </section>
 

@@ -11,6 +11,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
+        card: 'var(--card)',
+        'card-foreground': 'var(--card-foreground)',
+        popover: 'var(--popover)',
+        'popover-foreground': 'var(--popover-foreground)',
         primary: {
           DEFAULT: '#0062FF', // Deep Electric Blue
         },

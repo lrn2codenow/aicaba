@@ -184,7 +184,8 @@ export default function Home() {
               The ethical landscape of AI in ABA is constantly evolving. The <strong className="font-semibold text-accent">AI Consortium for ABA (AIC-ABA)</strong> is committed to ongoing dialogue, collaboration, and refinement of these guidelines. Connect with us to contribute, join, or stay updated.
             </p>
             <div className="text-lg text-accent font-semibold mt-8">
-              Check back soon for ways to get involved!
+              Check back soon for ways to get involved!<br />
+              <a href="mailto:aiconsortiumaba@gmail.com" className="underline hover:text-accent text-light ml-2">aiconsortiumaba@gmail.com</a>
             </div>
           </div>
         </section>
@@ -195,10 +196,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="md:flex md:justify-between">
             <div className="mb-8 md:mb-0">
-              <span className="text-2xl font-bold text-white tracking-tight">AI Consortium for ABA (AIC-ABA)</span>
+              <span className="text-2xl font-bold text-light tracking-tight">AI Consortium for ABA (AIC-ABA)</span>
               <p className="mt-2 text-gray-400 text-sm max-w-xs">Advancing ethical AI practices in Applied Behavior Analysis.</p>
               <p className="mt-4 text-gray-400 text-sm"><a href="mailto:aiconsortiumaba@gmail.com" className="underline hover:text-accent">aiconsortiumaba@gmail.com</a></p>
-              <address className="text-gray-400 text-sm not-italic">123 Consortium Lane, City, Country</address>
             </div>
             <div className="grid grid-cols-2 gap-8 md:gap-16">
               <div>

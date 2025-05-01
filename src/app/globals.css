@@ -200,3 +200,29 @@ header, footer {
   max-height: 500px;
   opacity: 1;
 }
+
+/* AI Credit Card Styles */
+.ai-credit-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+.ai-credit-card__container {
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  padding: 1.5rem 2rem;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.ai-credit-card__text {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+.ai-credit-card__highlight {
+  color: #00e6d0;
+  font-weight: 700;
+}

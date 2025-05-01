@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import NavBar from './NavBar';
+import AICreditCard from './AICreditCard'; // Import the new component
 import "./globals.css";
 
 const inter = Inter({
@@ -31,6 +32,10 @@ export default function RootLayout({
         <footer className="bg-black pt-8 pb-6 mt-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
             <p className="text-sm"> {new Date().getFullYear()} AIC-ABA. All rights reserved.</p>
+            {/* AI Credit Card */}
+            <div className="flex justify-center mt-8">
+              <AICreditCard />
+            </div>
           </div>
         </footer>
       </body>

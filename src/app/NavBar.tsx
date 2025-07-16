@@ -18,6 +18,7 @@ export default function NavBar() {
         <div className="hidden md:flex items-center space-x-6">
           <Link href="/resources" className="nav-link text-neutral dark:text-light hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Free Resources</Link>
           <Link href="/presentations" className="nav-link text-neutral dark:text-light hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Presentations</Link>
+          <Link href="/members" className="nav-link text-neutral dark:text-light hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Members</Link>
           <Link href="#contact" className="nav-link text-neutral dark:text-light hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Contact</Link>
         </div>
         {/* Hamburger menu button for mobile */}
@@ -33,6 +34,7 @@ export default function NavBar() {
       <div id="mobile-menu" className={`md:hidden flex flex-col space-y-2 mt-2 bg-white dark:bg-neutral shadow-lg rounded-lg p-4 transition-all duration-300 ${mobileOpen ? '' : 'hidden'}`}>
         <Link href="/resources" className="nav-link text-neutral dark:text-light hover:text-primary px-3 py-2 rounded-md text-base font-medium transition-colors duration-200" onClick={() => setMobileOpen(false)}>Free Resources</Link>
         <Link href="/presentations" className="nav-link text-neutral dark:text-light hover:text-primary px-3 py-2 rounded-md text-base font-medium transition-colors duration-200" onClick={() => setMobileOpen(false)}>Presentations</Link>
+        <Link href="/members" className="nav-link text-neutral dark:text-light hover:text-primary px-3 py-2 rounded-md text-base font-medium transition-colors duration-200" onClick={() => setMobileOpen(false)}>Members</Link>
         <Link href="#contact" className="nav-link text-neutral dark:text-light hover:text-primary px-3 py-2 rounded-md text-base font-medium transition-colors duration-200" onClick={() => setMobileOpen(false)}>Contact</Link>
       </div>
     </nav>

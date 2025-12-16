@@ -24,9 +24,9 @@ module.exports = {
           DEFAULT: '#00C2CB', // Teal/Cyan
         },
         accent: {
-          light: '#A18AFF', // lighter tint of violet
-          DEFAULT: '#7B61FF', // base violet purple
-          dark: '#5432CC', // darker tint
+          light: '#4A5568', // lighter gray
+          DEFAULT: '#23272F', // dark neutral
+          dark: '#000000', // black
         },
         neutral: {
           DEFAULT: '#2D3748', // Dark Slate

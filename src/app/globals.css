@@ -10,7 +10,7 @@
   --foreground: #23272F; /* deep neutral for text */
   --card: #FFFFFF;
   --card-foreground: #23272F;
-  --accent: #7B61FF;
+  --accent: #23272F;
   --accent-foreground: #FFFFFF;
   --neutral: #23272F;
   --light: #FFFFFF;
@@ -24,14 +24,14 @@
   --border: #E2E8F0;
   --input: #F7FAFC;
   --ring: #E2E8F0;
-  --chart-1: #7B61FF;
+  --chart-1: #23272F;
   --chart-2: #00C2CB;
   --chart-3: #F7FAFC;
   --chart-4: #E2E8F0;
   --chart-5: #23272F;
   --sidebar: #F7FAFC;
   --sidebar-foreground: #23272F;
-  --sidebar-primary: #7B61FF;
+  --sidebar-primary: #23272F;
   --sidebar-primary-foreground: #FFFFFF;
   --sidebar-accent: #23272F;
   --sidebar-accent-foreground: #F7FAFC;
@@ -49,8 +49,8 @@ html, body {
   --foreground: #F7FAFC;
   --card: #23272F;
   --card-foreground: #F7FAFC;
-  --accent: #7B61FF;
-  --accent-foreground: #FFFFFF;
+  --accent: #F7FAFC;
+  --accent-foreground: #23272F;
   --neutral: #F7FAFC;
   --light: #23272F;
   --primary: #0062FF;
@@ -63,15 +63,15 @@ html, body {
   --border: #2F3A4F;
   --input: #23272F;
   --ring: #2F3A4F;
-  --chart-1: #7B61FF;
+  --chart-1: #F7FAFC;
   --chart-2: #00C2CB;
   --chart-3: #23272F;
   --chart-4: #2F3A4F;
   --chart-5: #F7FAFC;
   --sidebar: #23272F;
   --sidebar-foreground: #F7FAFC;
-  --sidebar-primary: #7B61FF;
-  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-primary: #F7FAFC;
+  --sidebar-primary-foreground: #23272F;
   --sidebar-accent: #F7FAFC;
   --sidebar-accent-foreground: #23272F;
   --sidebar-border: #2F3A4F;
@@ -113,13 +113,13 @@ html, body {
 section {
   background: var(--card);
   color: var(--card-foreground);
-  box-shadow: 0 2px 12px 0 rgba(123,97,255,0.03);
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.03);
   border-radius: var(--radius);
   margin-bottom: 2rem;
 }
 
 section.bg-accent {
-  background: linear-gradient(120deg, #7B61FF 0%, #0062FF 100%);
+  background: linear-gradient(120deg, #23272F 0%, #000000 100%);
   color: #fff;
 }
 
@@ -159,8 +159,8 @@ a:hover, .nav-link:hover {
 
 /* Launch polish: accent circle for nav logo */
 .nav-logo-accent {
-  background: linear-gradient(135deg, #7B61FF, #0062FF);
-  box-shadow: 0 2px 8px 0 rgba(0,98,255,0.10);
+  background: linear-gradient(135deg, #23272F, #000000);
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
 }
 
 /* Animate pulse for launch call-to-action */
@@ -174,12 +174,12 @@ a:hover, .nav-link:hover {
 
 /* Enhance drop shadows for hero */
 .hero-shadow {
-  text-shadow: 0 4px 24px rgba(0,98,255,0.10), 0 1.5px 0.5px rgba(123,97,255,0.09);
+  text-shadow: 0 4px 24px rgba(0,0,0,0.10), 0 1.5px 0.5px rgba(0,0,0,0.09);
 }
 
 /* Footer hover polish */
 footer a:hover {
-  color: #7B61FF;
+  color: #23272F;
   text-decoration: underline;
   transition: color 0.2s;
 }
@@ -223,6 +223,6 @@ header, footer {
   margin: 0;
 }
 .ai-credit-card__highlight {
-  color: #00e6d0;
+  color: #ffffff;
   font-weight: 700;
 }

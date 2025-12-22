@@ -129,7 +129,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-neutral dark:text-light mb-1 max-w-prose">AI within Client Outcomes</h3>
-                  <p className="text-neutral dark:text-light text-sm leading-relaxed">Document whether AI enhances your clients' progress and make modifications when meaningful outcomes aren't achieved.</p>
+                  <p className="text-neutral dark:text-light text-sm leading-relaxed">Document whether AI enhances your clients&apos; progress and make modifications when meaningful outcomes aren&apos;t achieved.</p>
                 </div>
               </Card>
               <Card className="bg-light dark:bg-neutral border-2 border-accent p-6 rounded-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition flex items-start space-x-4">
@@ -138,7 +138,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-neutral dark:text-light mb-1 max-w-prose">AI Literacy and Training</h3>
-                  <p className="text-neutral dark:text-light text-sm leading-relaxed">Seek training and mentorship to build competence in AI's capabilities, limitations, and ethical implications for your practice.</p>
+                  <p className="text-neutral dark:text-light text-sm leading-relaxed">Seek training and mentorship to build competence in AI&apos;s capabilities, limitations, and ethical implications for your practice.</p>
                 </div>
               </Card>
               <Card className="bg-light dark:bg-neutral border-2 border-accent p-6 rounded-xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition flex items-start space-x-4">

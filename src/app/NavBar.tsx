@@ -9,6 +9,7 @@ export default function NavBar() {
     <nav role="navigation" aria-label="Main navigation" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex justify-between items-center h-16">
         <Link href="/" className="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img 
             src="/aic.svg" 
             alt="AIC-ABA logo" 

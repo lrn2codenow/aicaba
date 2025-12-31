@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import NavBar from './NavBar';
 import AICreditCard from './AICreditCard'; // Import the new component
 import "./globals.css";
@@ -23,6 +24,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-J0XHEM205P"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-J0XHEM205P');
+          `}
+        </Script>
+        
         <a href="#main-content" className="sr-only focus:not-sr-only absolute top-4 left-4 bg-accent text-white px-3 py-2 rounded">Skip to main content</a>
         <header className="bg-white/80 dark:bg-neutral/80 backdrop-blur shadow-sm sticky top-0 z-50 border-b border-gray-200 dark:border-neutral transition-all duration-300">
           <NavBar />

@@ -13,7 +13,7 @@ export default function ContactPage() {
           <div className="flex flex-col items-center gap-8">
             <a 
               href="mailto:aiconsortiumaba@gmail.com" 
-              className="text-2xl text-neutral dark:text-light hover:text-primary dark:hover:text-primary transition-colors duration-200 flex items-center gap-3"
+              className="text-2xl text-neutral dark:text-light hover:text-gray-600 dark:hover:text-gray-300 transition-colors duration-200 flex items-center gap-3"
             >
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />

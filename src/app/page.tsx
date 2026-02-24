@@ -19,9 +19,9 @@ export default function Home() {
               Promoting responsible innovation and ethical practice at the intersection of artificial intelligence and behavioral services.
             </p>
             <div className="mt-12 flex justify-center">
-              <span className="inline-flex items-center justify-center px-10 py-4 border border-transparent text-lg font-semibold rounded-md text-neutral bg-gray-300 opacity-80 cursor-not-allowed shadow-lg" aria-disabled="true">
-                Ethical Guidelines (Coming Soon)
-              </span>
+              <Link href="/guidelines" className="inline-flex items-center justify-center px-10 py-4 border-2 border-white text-lg font-bold rounded-md text-neutral bg-white hover:bg-gray-100 shadow-xl transition-colors duration-200">
+                Ethical Guidelines
+              </Link>
             </div>
           </div>
         </section>
@@ -41,7 +41,7 @@ export default function Home() {
             <p className="text-xl text-neutral dark:text-light leading-relaxed">We provide clear ethical guidance for behavior analysts<sup title="Behavior analysts are defined as all behavior analytic practitioners and other healthcare providers whose scope of training includes behavior analysis.">*</sup> integrating AI into behavioral services.</p>
             <p className="text-lg text-neutral dark:text-light leading-relaxed max-w-3xl mx-auto">We promote best practices, protect client welfare, align with legal standards, and uphold ABA integrity.</p>
             <div className="text-center">
-              <a href="#" className="text-base font-semibold text-accent hover:text-primary underline underline-offset-4 transition-colors duration-200">Learn More About Who We Are &rarr;</a>
+              <a href="#" className="text-base font-semibold text-accent hover:text-gray-600 dark:hover:text-gray-300 underline underline-offset-4 transition-colors duration-200">Learn More About Who We Are &rarr;</a>
             </div>
           </div>
         </section>
@@ -161,9 +161,9 @@ export default function Home() {
               </Card>
             </div>
             <div className="text-center mt-16">
-              <span className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-neutral bg-secondary opacity-90 cursor-not-allowed shadow-lg">
-                Ethical Guidelines (Coming Soon)
-              </span>
+              <Link href="/guidelines" className="inline-flex items-center justify-center px-8 py-3 border-2 border-neutral dark:border-light text-base font-bold rounded-md text-neutral dark:text-light bg-white dark:bg-neutral-900 hover:bg-gray-100 dark:hover:bg-neutral-800 shadow-lg transition-colors duration-200">
+                View Ethical Guidelines
+              </Link>
             </div>
           </div>
         </section>

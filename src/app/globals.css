@@ -1,6 +1,5 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 /* Remove unsupported @custom-variant and @theme rules for compatibility with standard CSS and Tailwind. */
 
@@ -149,7 +148,7 @@ a, .nav-link {
   transition: color 0.2s;
 }
 a:hover, .nav-link:hover {
-  color: #0062FF;
+  color: #4A5568;
 }
 
 /* Polished card shadow */

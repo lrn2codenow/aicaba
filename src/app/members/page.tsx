@@ -34,7 +34,7 @@ const steeringCommittee: Member[] = [
   },
   {
     name: 'Kwadwo Britwum',
-    credentials: 'PhD, BCBA',
+    credentials: 'PhD, BCBA-D, LBA (PA)',
     title: 'Assistant Professor, Assistant Director of Applied Behavior Analysis Programs',
     organization: 'Mount St Mary\'s University',
     email: 'k.o.britwum@msmary.edu',

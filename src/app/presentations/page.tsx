@@ -10,42 +10,46 @@ type UpcomingPresentation = {
   title: string;
   presenters: string;
   event: string;
-  location: string;
   date: string;
   link: string;
 };
 
 const upcomingPresentations: UpcomingPresentation[] = [
   {
-    title: "A Framework for Ethical Use of Artificial Intelligence in Behavior Analytic Practice",
-    presenters: "Mahin Para-Cremer, Jennifer Collado, Kelly King, Beth Ramos",
-    event: "CalABA 2026",
-    location: "Sacramento, CA",
-    date: "March 7, 2026",
-    link: "https://behaviorlive.com/conferences/calaba/events/a-framework-for-ethical-use-of-artificial-intelligence-in-behavior-analytic-pract1",
+    title: "The AIC-ABA Guidelines and Application for Ethical Use of Artificial Intelligence Analytic Practice",
+    presenters: "Mahin Para-Cremer",
+    event: "WIBA 2026",
+    date: "July 16, 2026",
+    link: "https://behaviorlive.com/conferences/wiba26/home",
   },
   {
-    title: "A Framework for Ethical Use of Artificial Intelligence in Behavior Analytic Practice",
-    presenters: "Jennifer Collado, Mahin Para-Cremer, Kelly King, Beth Ramos, Ellie Kazemi",
-    event: "APBA Conference",
-    location: "New Orleans, LA",
-    date: "March 14, 2026",
-    link: "https://behaviorlive.com/conferences/APBA26/events/a-framework-for-ethical-use-of-artificial-intelligence-in-behavior-analytic-pract",
-  },
-  {
-    title: "Ethical AI in Behavior Analysis: A Q&A with the AIC-ABA",
-    presenters: "Adrienne M. Jennings, Jennifer Collado, Mahin Para-Cremer, Kelly King",
-    event: "ABAI Webinar",
-    location: "Online Webinar",
-    date: "March 17, 2026",
-    link: "https://www.abainternational.org/learning-center/webinars.aspx",
+    title: "Navigating the Future: Ethical Use of Artificial Intelligence in Applied Behavior Analysis",
+    presenters: "Mahin Para-Cremer, Kelly King",
+    event: "BABAT 2026",
+    date: "October 7-9, 2026",
+    link: "https://behaviorlive.com/conferences/babat2026/home",
   },
 ];
 
 const pastPresentations: Presentation[] = [
   {
+    citation: "Para-Cremer, M., Collado, J., King, K., & Ramos, B. (2026). A framework for ethical use of artificial intelligence in behavior analytic practice. Paper presented at CalABA 2026, Sacramento, CA.",
+    link: "https://behaviorlive.com/courses/a-framework-for-ethical-use-of-artificial-intelligence-in-behavior-analytic-pract1",
+    date: "March, 2026",
+  },
+  {
+    citation: "Collado, J., Para-Cremer, M., King, K., Ramos, B., & Kazemi, E. (2026). A framework for ethical use of artificial intelligence in behavior analytic practice. Paper presented at APBA Conference, New Orleans, LA.",
+    link: "https://behaviorlive.com/courses/a-framework-for-ethical-use-of-artificial-intelligence-in-behavior-analytic-pract",
+    date: "March, 2026",
+  },
+  {
+    citation: "Jennings, A. M., Collado, J., Para-Cremer, M., & King, K. (2026). Ethical AI in behavior analysis: A Q&A with the AIC-ABA. Webinar presented at the Association for Behavior Analysis International.",
+    link: "https://www.abainternational.org/learning-center/version3/watch-video.aspx?ikey=38782&trackid=WBN",
+    date: "March, 2026",
+  },
+  {
     citation: "Ramos, B., Murray, A., Del Rio, M., Jennings, A. M., Plessas, A., Collado, J. L., King, K., Britwum, K. O., Para-Cremer, M. L., Peck, S., & Courtney, W. (2025). Navigating ethical challenges of artificial intelligence in behavior analytic practice: Risks, strategies, and decision-making. Paper presented at the Association for Behavior Analysis International, Washington, DC.",
-    link: "", // Add URL here when available
+    link: "",
     date: "May, 2025",
   },
   {
@@ -55,7 +59,7 @@ const pastPresentations: Presentation[] = [
   },
   {
     citation: "Plessas, A., Jennings, A., King, K., Murray, A., & Para-Cremer, M. (2025). A developing framework for ethical use of artificial intelligence in behavior analytic practice [Conference presentation]. New Zealand ABA Conference 2025, Australia.",
-    link: "", // No recording available
+    link: "",
     date: "July, 2025",
   },
   {
@@ -65,7 +69,7 @@ const pastPresentations: Presentation[] = [
   },
   {
     citation: "Jennings, A. M., Del Rio, M., Plessas, A., Britwum, K. O., Para-Cremer, M. L., & Ramos, B. (2025). Artificial intelligence in behavior analytic services: Ethical risks, practical guidelines, and decision-making strategies. Paper presented at the International Conference of the Association for Behavior Analysis International, Lisbon, Portugal.",
-    link: "", // Add URL here when available
+    link: "",
     date: "November, 2025",
   },
 ];
@@ -105,11 +109,6 @@ export default function PresentationsPage() {
                       <p className="text-gray-700 dark:text-gray-300 mb-1">
                         <span className="font-medium">Presenters:</span> {presentation.presenters}
                       </p>
-                      {presentation.location && (
-                        <p className="text-gray-700 dark:text-gray-300">
-                          <span className="font-medium">Location:</span> {presentation.location}
-                        </p>
-                      )}
                     </div>
                     <div className="flex-shrink-0 inline-flex items-center gap-2 px-4 py-2 bg-gray-300 dark:bg-gray-600 text-gray-700 dark:text-gray-200 rounded-md text-sm font-medium whitespace-nowrap shadow-md">
                       {presentation.date}
@@ -135,11 +134,6 @@ export default function PresentationsPage() {
                       <p className="text-gray-700 dark:text-gray-300 mb-1">
                         <span className="font-medium">Presenters:</span> {presentation.presenters}
                       </p>
-                      {presentation.location && (
-                        <p className="text-gray-700 dark:text-gray-300">
-                          <span className="font-medium">Location:</span> {presentation.location}
-                        </p>
-                      )}
                     </div>
                     <span className="flex-shrink-0 inline-flex items-center px-4 py-2 bg-gray-300 dark:bg-gray-600 text-gray-600 dark:text-gray-400 rounded-md text-sm font-medium whitespace-nowrap cursor-not-allowed">
                       {presentation.date}

@@ -41,7 +41,7 @@ export default function Home() {
             <p className="text-xl text-neutral dark:text-light leading-relaxed">We provide clear ethical guidance for behavior analysts<sup title="Behavior analysts are defined as all behavior analytic practitioners and other healthcare providers whose scope of training includes behavior analysis.">*</sup> integrating AI into behavioral services.</p>
             <p className="text-lg text-neutral dark:text-light leading-relaxed max-w-3xl mx-auto">We promote best practices, protect client welfare, align with legal standards, and uphold ABA integrity.</p>
             <div className="text-center">
-              <a href="#" className="text-base font-semibold text-accent hover:text-gray-600 dark:hover:text-gray-300 underline underline-offset-4 transition-colors duration-200">Learn More About Who We Are &rarr;</a>
+              <a href="#about" className="text-base font-semibold text-accent hover:text-gray-600 dark:hover:text-gray-300 underline underline-offset-4 transition-colors duration-200">Learn More About Who We Are &rarr;</a>
             </div>
           </div>
         </section>
@@ -211,8 +211,8 @@ export default function Home() {
               <div>
                 <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Resources</h3>
                 <ul className="mt-4 space-y-2">
-                  <li><span className="text-base text-gray-500 cursor-not-allowed">Free Resources (Soon)</span></li>
-                  <li><span className="text-base text-gray-500 cursor-not-allowed">Presentations (Soon)</span></li>
+                  <li><Link href="/resources" className="text-base text-gray-300 hover:text-accent transition-colors">Free Resources</Link></li>
+                  <li><Link href="/presentations" className="text-base text-gray-300 hover:text-accent transition-colors">Presentations</Link></li>
                 </ul>
               </div>
             </div>
